@@ -9,8 +9,6 @@ L = Ninbo
 O = Sanxing
 CN = SXE1234567812345677
 [v3_req]
-keyUsage = keyEncipherment, dataEncipherment
-extendedKeyUsage = serverAuth
 subjectAltName = @alt_names
 [alt_names]
 IP.1 = 0.0.0.0
