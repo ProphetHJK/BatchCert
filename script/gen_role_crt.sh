@@ -31,7 +31,7 @@ KEY_FILE=$CERT_PATH/$NAME.key
 CSR_FILE=$CERT_PATH/$NAME.csr
 CERT_FILE=$CERT_PATH/$NAME.crt
 
-if [ -f $CSR_FILE ] && [ -f $KEY_FILE ] && [ -f $CERT_FILE ]; then
+if [ -f $KEY_FILE ] && [ -f $CERT_FILE ]; then
 	echo "file exist ,skip"|logger
     exit 0
 fi
@@ -39,6 +39,7 @@ fi
 # 生成私钥
 echo "generate $NAME private key..."|logger
 $OPENSSL_PATH ecparam -genkey -name prime256v1 -out $KEY_FILE
+# $OPENSSL_PATH genrsa -out $KEY_FILE 1024
 stat=$?
 if [ $stat -eq 0 ]; then
 	echo "generate $NAME private key OK"|logger

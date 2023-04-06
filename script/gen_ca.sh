@@ -30,7 +30,7 @@ fi
 
 # 生成CERT
 echo "generate  $NAME CERT..."|logger
-$OPENSSL_PATH req -new -x509 -days 3650 -key $KEY_FILE -out $CERT_FILE -subj /CN=DELGAZ_ROOT_CA_TEST/ST="Zhejiang"/L="Ningbo"/C="CN"/O="Sanxing" -config $OPENSSL_CNF
+$OPENSSL_PATH req -new -x509 -days 3650 -key $KEY_FILE -out $CERT_FILE -subj /CN=DELGAZ_ROOT_CA_TEST/ST="Zhejiang"/L="Ningbo"/C="CN"/O="SANXING" -config $OPENSSL_CNF
 stat=$?
 if [ $stat -eq 0 ]; then
 	echo "generate $NAME CERT OK"|logger

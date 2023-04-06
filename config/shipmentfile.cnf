@@ -7,9 +7,6 @@ C = CN
 ST = Zhejiang
 L = Ninbo
 O = SANXING
-CN = SXE1234567812345677
+CN = shipmentfile
 [v3_req]
-subjectAltName = @alt_names
-[alt_names]
-IP.1 = 0.0.0.0
-IP.2 = 192.168.100.100
+keyUsage = digitalSignature

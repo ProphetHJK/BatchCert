@@ -15,13 +15,15 @@
 │   ├── openssl.cnf ------------ openssl默认配置文件，无需配置
 │   └── req.cnf ---------------- CSR请求配置文件，无需手动配置
 ├── data ----------------------- 目录：存放数据文件
-│   └── data.csv --------------- 存放设备相关参数信息，用于CSR附加字段
+│   └── data.csv --------------- 存放设备相关参数信息，用于CSR附加字段，格式为ID/ip1/ip2
 ├── script --------------------- 目录：存放shell脚本文件
 │   ├── config_csr_reqcnf.sh --- 自动配置req.cnf脚本
 │   ├── gen_ca.sh -------------- 生成ca私钥与证书
 │   ├── gen_device_crt.sh ------ 生成device私钥与证书
-│   └── gen_role_crt.sh -------- 生成各角色私钥、CSR与证书
+│   ├── gen_role_crt.sh -------- 生成各角色私钥、CSR与证书
+│   └── gen_shipmentfile_crt.sh -生成shipmentfile加密用公私钥（很少用）
 ├── main.sh -------------------- 主脚本
+├── deletefile.py ---------------批量删除指定文件名文件
 ├── .gitignore ----------------- git过滤文件
 └── README.md ------------------ 本文件
 ```
