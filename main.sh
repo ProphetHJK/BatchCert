@@ -22,6 +22,6 @@ do
     script/gen_device_crt.sh $serial_no
     script/gen_role_crt.sh client $serial_no $sim_ip $local_ip
     script/gen_role_crt.sh server $serial_no $sim_ip $local_ip
-    script/rm_csr.sh $serial_no
+    # script/rm_csr.sh $serial_no
 done
 

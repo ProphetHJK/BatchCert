@@ -5,7 +5,7 @@ prompt = no
 [req_distinguished_name]
 C = CN
 ST = Zhejiang
-L = Ninbo
+L = Ningbo
 O = SANXING
 CN = shipmentfile
 [v3_req]

@@ -5,9 +5,9 @@ prompt = no
 [req_distinguished_name]
 C = CN
 ST = Zhejiang
-L = Ninbo
+L = Ningbo
 O = SANXING
-CN = SXE1234567812345677
+CN = SXE1022062313
 [v3_req]
 subjectAltName = @alt_names
 [alt_names]
